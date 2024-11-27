@@ -1,0 +1,160 @@
+* Logo Styling */
+.logo {
+  height: 40px;
+  margin-right: 8px;
+}
+
+/* Active Link Styling */
+.nav-link.active {
+  font-weight: bold;
+  color: #007bff !important;
+}
+
+/* Dropdown Styling */
+.dropdown-menu {
+  border-radius: 8px;
+}
+
+/* Button Styling */
+.btn-success {
+  background-color: #28a745;
+  border: none;
+}
+
+.btn-outline-success {
+  border-color: #28a745;
+  color: #28a745;
+}
+
+.btn-outline-success:hover {
+  background-color: #28a745;
+  color: #fff;
+}
+--------------------------
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7fff5;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.title {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.programs {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.program-card {
+    background-color: #eaffd0;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+    margin: 0 auto 10px;
+}
+
+.react-icon {
+    background-color: #a5d6a7;
+    border-radius: 50%;
+}
+
+.python-icon {
+    background-color: #81c784;
+    border-radius: 50%;
+}
+
+.marketing-icon {
+    background-color: #66bb6a;
+    border-radius: 50%;
+}
+
+.program-card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+.btn {
+    background-color: #66bb6a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #57a64a;
+}
+
+.filter-section {
+    margin-top: 30px;
+    text-align: left;
+}
+
+.filter-section h3 {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.language {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.minus-btn {
+    background-color: #ff5252;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.minus-btn:hover {
+    background-color: #d32f2f;
+}
+
+.filter-btn, .all-btn {
+    background-color: #66bb6a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 5px 0;
+    cursor: pointer;
+}
+
+.filter-btn:hover, .all-btn:hover {
+    background-color: #57a64a;
+}
+---------------
+
+

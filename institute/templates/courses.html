@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navbar Example</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../static/courses.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+    <div class="container">
+      <!-- Logo -->
+      <a class="navbar-brand" href="courses">
+        <img src="logo.png" alt="Logo" class="logo">
+        Inmakes Learning Hub
+      </a>
+
+      <!-- Toggle Button for Mobile -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Navbar Links -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="internshipsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Internships
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="internshipsDropdown">
+              <li><a class="dropdown-item" href="#">Web Development</a></li>
+              <li><a class="dropdown-item" href="#">Data Science</a></li>
+              <li><a class="dropdown-item" href="#">Design</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+
+        <!-- Buttons -->
+        <div>
+          <a href="#" class="btn btn-success me-2">Register</a>
+          <a href="#" class="btn btn-outline-success">Login</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div class="container">
+    <h1 class="title">Trending Programs</h1>
+    <p class="subtitle">Choose your Internship Program</p>
+    <div class="programs">
+        <div class="program-card">
+            <div class="icon react-icon"></div>
+            <h3>Mobile App Development - Malayalam</h3>
+            <button class="btn">Register Now</button>
+            <p>to know more</p>
+        </div>
+        <div class="program-card">
+            <div class="icon python-icon"></div>
+            <h3>Python Full Stack - Malayalam</h3>
+            <button class="btn">Register Now</button>
+            <p>to know more</p>
+        </div>
+        <div class="program-card">
+            <div class="icon marketing-icon"></div>
+            <h3>Digital Marketing - Malayalam</h3>
+            <button class="btn">Register Now</button>
+            <p>to know more</p>
+        </div>
+    </div>
+    <div class="filter-section">
+        <h3>Languages</h3>
+        <div class="language">
+            <span>Malayalam</span>
+            <button class="minus-btn">-</button>
+        </div>
+        <div class="language">
+            <span>Tamil</span>
+            <button class="minus-btn">-</button>
+        </div>
+        <button class="filter-btn">Filter items</button>
+        <button class="all-btn">Show All Programs</button>
+    </div>
+</div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
