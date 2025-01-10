@@ -127,7 +127,9 @@
     }
   </style>
 </head>
+{% load static %}
 <body>
+<<<<<<< HEAD
   <!-- Header Section -->
   <header>
     <nav>
@@ -231,13 +233,150 @@
           <h5 class="card-title">Full Stack Web Development:Python</h5>
         </div>
       </div>
+=======
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+     <div class="container"> 
+      <!-- Logo -->
+      <a class="navbar-brand" href="courses">
+         <!-- <img src="logo.png" alt="Logo" class="logo">  -->
+        Infrom Learning Hub
+      </a> 
+      
+      <!-- Toggle Button for Mobile -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Navbar Links -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="internshipsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              courses
+            </a>
+            <!-- <ul class="dropdown-menu" aria-labelledby="internshipsDropdown">
+              <li><a class="dropdown-item" href="#">Web Development</a></li>
+              <li><a class="dropdown-item" href="#">Data Science</a></li>
+              <li><a class="dropdown-item" href="#">Design</a></li>
+            </ul> -->
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+
+        <!-- Buttons -->
+        <div>
+          <a href="#" class="btn btn-success me-2">Register</a>
+          <a href="#" class="btn btn-outline-success">Login</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div class="cards">
+    <div class="card">
+      <div class="icon"><img src="{%static 'images/reactimg.png' %}" alt="React"></div>
+      <h3>Mobile App Development - Malayalam</h3>
+      <button class="register-btn">Register Now</button>
+      <p class="learn-more">to know more</p>
+    </div>
+    <div class="card">
+      <div class="icon"><img src="{%static 'images/trendingprgm2.png' %}" alt="Python"></div>
+      <h3>Python Full Stack - Malayalam</h3>
+      <button class="register-btn">Register Now</button>
+      <p class="learn-more">to know more</p>
+    </div>
+    <div class="card">
+      <div class="icon"><img src="{%static 'images/trendingpgrm3.jpg' %}" alt="Digital Marketing"></div>
+      <h3>Digital Marketing - Malayalam</h3>
+      <button class="register-btn">Register Now</button>
+      <p class="learn-more">to know more</p>
+>>>>>>> origin/main
     </div>
   </div>
 </div>
 
+<<<<<<< HEAD
 
 
 
+=======
+<div class="cards">
+  <div class="card">
+    <div class="icon"><img src="{%static 'images/trendingpgrm4.jpg' %}" alt="Flutter"></div>
+    <h3>Java - Malayalam</h3>
+    <button class="register-btn">Register Now</button>
+    <p class="learn-more">to know more</p>
+  </div>
+  <div class="card">
+    <div class="icon"><img src="{%static 'images/meanstack.jpg' %}" alt="CRM"></div>
+    <h3>Mean Stack</h3>
+    <button class="register-btn">Register Now</button>
+    <p class="learn-more">to know more</p>
+  </div>
+  <div class="card">
+    <div class="icon"><img src="{%static 'images/flutter.jpg' %}" alt="Flutter"></div>
+    <h3>Flutter</h3>
+    <button class="register-btn">Register Now</button>
+    <p class="learn-more">to know more</p>
+  </div>
+</div>
+</div>
+-----------------------
+
+<footer class="footer">
+  <div class="footer-container">
+      <div class="footer-section">
+          <h2>Infrom <span>Learning </span></h2>
+          <p>
+              Learn new skills with top educators. Infrom learning  is the right place for you to learn new skills that will fetch you better opportunities in your career.
+          </p>
+      </div>
+      <div class="footer-section">
+          <h3>Additional Links</h3>
+          <ul>
+              <li><a href="#">Login</a></li>
+              <li><a href="#">Register</a></li>
+              <li><a href="#">Contact us</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Refund Policy</a></li>
+              <li><a href="#">Terms And Conditions</a></li>
+              <li><a href="#">About</a></li>
+          </ul>
+      </div>
+      <div class="footer-section">
+          <h3>Support</h3>
+          <p>+91 4842998191</p>
+          <p>+91 75940 55036</p>
+          <p>support@infrom.in</p>
+      </div>
+      <div class="footer-section">
+          <h3>Recognized/Certified by</h3>
+          <div class="certifications">
+              <img src="{%static 'images/kerala.png' %}" alt="Kerala Startup Mission">
+              <img src="{%static 'images/iso.png' %}" alt="ISO">
+              <img src="../static/images/start.png" alt="Startup India">
+              <!-- <img src="nctet.png" alt="NCTET"> -->
+          </div>
+          <div class="social-links">
+              <a href="#"><img src="{%static 'images/insta.png' %}" alt="Instagram"></a>
+              <a href="#"><img src="../static/images/whtsapp.png" alt="WhatsApp"></a>
+              <a href="#"><img src="{%static 'images/you tube.png' %}" alt="YouTube"></a>
+              <a href="#"><img src="{%static 'images/linkedin.png' %}" alt="LinkedIn"></a>
+              <!-- <a href="#"><img src="./imagess/fb.png" alt="Facebook"></a> -->
+          </div>
+      </div>
+  </div>
+  <div class="footer-bottom">
+      <p>Infrom Learning  © All rights reserved</p>
+  </div>
+>>>>>>> origin/main
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
