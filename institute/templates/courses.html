@@ -3,93 +3,240 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Navbar Example</title>
+  <title>SkillUpNow</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="../static/courses.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Body Styling */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f798df;
+      color: #333;
+    }
+
+    /* Header Navigation */
+    header {
+      background-color: #fff;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+      padding: 10px 20px;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #4CAF50;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #333;
+      font-size: 1rem;
+    }
+
+    .auth-buttons button {
+      padding: 8px 16px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1rem;
+      margin-left: 10px;
+    }
+
+    .btn-register {
+      background-color: #4CAF50;
+      color: white;
+    }
+
+    .btn-login {
+      background-color: transparent;
+      color: #4CAF50;
+      border: 1px solid #4CAF50;
+    }
+
+    /* Course Section */
+    .container {
+      margin-top: 30px;
+    }
+
+    .title {
+      text-align: center;
+      font-size: 2.5rem;
+      color: #333;
+      margin-bottom: 20px;
+    }
+
+    .card {
+      border: none;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .card-body {
+      text-align: center;
+      padding: 20px;
+    }
+
+    .card-title {
+      font-size: 1.25rem;
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    .btn {
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      padding: 10px 15px;
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+
+    .btn:hover {
+      background-color: #0056b3;
+    }
+  </style>
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
-    <div class="container">
-      <!-- Logo -->
-      <a class="navbar-brand" href="courses">
-        <img src="logo.png" alt="Logo" class="logo">
-        Inmakes Learning Hub
-      </a>
+  <!-- Header Section -->
+  <header>
+    <nav>
+      <div class="logo">
+        <span>SkillUpNow</span> Learning
+      </div>
+      <ul>
+        
+        <li><a href="Home">Home</a></li>
 
-      <!-- Toggle Button for Mobile -->
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+        <li><a href="#">Courses</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <div class="auth-buttons">
+        <button class="btn-register">Register</button>
+        <button class="btn-login">Login</button>
+      </div>
+    </nav>
+  </header>
 
-      <!-- Navbar Links -->
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav me-auto">
-          <li class="nav-item">
-            <a class="nav-link active" href="#">Home</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="internshipsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Internships
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="internshipsDropdown">
-              <li><a class="dropdown-item" href="#">Web Development</a></li>
-              <li><a class="dropdown-item" href="#">Data Science</a></li>
-              <li><a class="dropdown-item" href="#">Design</a></li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
-          </li>
-        </ul>
-
-        <!-- Buttons -->
-        <div>
-          <a href="#" class="btn btn-success me-2">Register</a>
-          <a href="#" class="btn btn-outline-success">Login</a>
+  <!-- Courses Section -->
+  <div class="container">
+    <h1 class="title">Courses</h1>
+    <div class="row row-cols-1 row-cols-md-4 g-4">
+      <!-- MERN Stack -->
+      <div class="col">
+        <div class="card">
+          <img src="../static/images/mern.jpg" alt="MERN Stack">
+          <div class="card-body">
+            <h5 class="card-title">MERN Stack</h5>
+          </div>
+        </div>
+      </div>
+      <!-- UI/UX -->
+      <div class="col">
+        <div class="card">
+          <img src="../static/images/ui.jpg" alt="UI/UX">
+          <div class="card-body">
+            <h5 class="card-title">UI/UX</h5>
+          </div>
+        </div>
+      </div>
+      <!-- Mobile Application Development -->
+      <div class="col">
+        <div class="card">
+          <img src="../static/images/mobile.jpg" alt="Mobile Application Development">
+          <div class="card-body">
+            <h5 class="card-title">Mobile Application Development</h5>
+          </div>
+        </div>
+      </div>
+      <!-- Master in DevOps -->
+      <div class="col">
+        <div class="card">
+          <img src="../static/images/master.jpg" alt="Master in DevOps">
+          <div class="card-body">
+            <h5 class="card-title">Master in DevOps</h5>
+          </div>
         </div>
       </div>
     </div>
-  </nav>
-  <div class="container">
-    <h1 class="title">Trending Programs</h1>
-    <p class="subtitle">Choose your Internship Program</p>
-    <div class="programs">
-        <div class="program-card">
-            <div class="icon react-icon"></div>
-            <h3>Mobile App Development - Malayalam</h3>
-            <button class="btn">Register Now</button>
-            <p>to know more</p>
+  </div>
+
+  <!-- Courses Section -->
+<div class="container">
+  <!-- <h1 class="title">Courses</h1> -->
+  <div class="row row-cols-1 row-cols-md-4 g-4">
+    <!-- MERN Stack -->
+    <div class="col">
+      <div class="card">
+        <img src="../static/images/technology-security-concept-safety-digital-protection-system-768x512.jpg" alt="MERN Stack">
+        <div class="card-body">
+          <h5 class="card-title">Advanced Diploma in Cyber Security</h5>
         </div>
-        <div class="program-card">
-            <div class="icon python-icon"></div>
-            <h3>Python Full Stack - Malayalam</h3>
-            <button class="btn">Register Now</button>
-            <p>to know more</p>
-        </div>
-        <div class="program-card">
-            <div class="icon marketing-icon"></div>
-            <h3>Digital Marketing - Malayalam</h3>
-            <button class="btn">Register Now</button>
-            <p>to know more</p>
-        </div>
+      </div>
     </div>
-    <div class="filter-section">
-        <h3>Languages</h3>
-        <div class="language">
-            <span>Malayalam</span>
-            <button class="minus-btn">-</button>
+    <!-- UI/UX -->
+    <div class="col">
+      <div class="card">
+        <img src="../static/images/man_tablet_server_room_programming_coding_cybersecurity_information-768x526.jpg" alt="UI/UX">
+        <div class="card-body">
+          <h5 class="card-title">Advanced Diploma in Network engineer:Cloud & Security</h5>
         </div>
-        <div class="language">
-            <span>Tamil</span>
-            <button class="minus-btn">-</button>
-        </div>
-        <button class="filter-btn">Filter items</button>
-        <button class="all-btn">Show All Programs</button>
+      </div>
     </div>
+    <!-- Mobile Application Development -->
+    <div class="col">
+      <div class="card">
+        <img src="../static/images/digital-marketing.webp" alt="Mobile Application Development">
+        <div class="card-body">
+          <h5 class="card-title">Advanced Diploma in Digital Marketing: Al Integrated</h5>
+        </div>
+      </div>
+    </div>
+    <!-- Master in DevOps -->
+    <div class="col">
+      <div class="card">
+        <img src="../static/images/python.jpg" alt="Master in DevOps">
+        <div class="card-body">
+          <h5 class="card-title">Full Stack Web Development:Python</h5>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
+
+
+
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
